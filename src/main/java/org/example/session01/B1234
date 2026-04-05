@@ -1,0 +1,29 @@
+Câu 1:
+Hiện tại class RechargeService đang giữ quyền nên khi dùng lệnh nó đã tạo ra một hard-core làm mất đi tính linh hoạt
+Cách viết này làm mất đi khả năng linh hoạt của ứng dụng vì nó không thể linh hoạt chuyển đổi class hoặc file
+
+Câu 2:
+Vì khi dùng @Component thì class sẽ hiểu là singleton và dùng chung biến playTime
+
+Câu 3:
+Input: Để đặt món, hệ thống cần biết những thông tin (Tên món, số lượng, người trả tiền)
+
+Output: Sau khi nhấn nút "Đặt hàng", kết quả trả về màn hình là (Thành công/Thất bại và lý do cụ thể).
+
+Kiểm tra xem món đó còn trong kho không (InventoryRepository).
+Thông báo cho nhà bếp làm món và báo thành công cho khách.
+Kiểm tra xem số dư tài khoản có đủ trả tiền món đó không.
+Trừ tiền trong tài khoản người dùng (UserAccountRepository).
+
+Câu 4:
+Constructor Injection: (dependency) bị null, ko thể khởi động (khởi tạo đối tượng)
+
+Setter Injection: Cho phép bạn dùng từ khóa final cho các Sender
+
+Tiêu chí,Constructor Injection,Field Injection (@Autowired)
+Tính an toàn (Null Safety),Đảm bảo không bao giờ bị Null.,?
+Tính bất biến (Final),Có thể dùng final., ko
+Độ ngắn gọn của code,Code dài (phải viết constructor)., Bình thường
+Khả năng Unit Test,Dễ (truyền Mock qua constructor)., khó
+
+
