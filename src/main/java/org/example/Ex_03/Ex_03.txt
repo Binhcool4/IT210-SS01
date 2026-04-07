@@ -1,0 +1,15 @@
+-Input:
+Gồm username, foodName (tên món), quantity (số lượng). Hệ thống sẽ dùng các thông tin này để kiểm tra kho và tài khoản người dùng.
+-Output:
+•	Nếu thành công: thông báo đặt món thành công, đã trừ tiền và cập nhật kho.
+•	Nếu thất bại: trả về thông báo lỗi như “Hết món” hoặc “Không đủ tiền”.
+- Các bước xử lý:
+•	Nhận thông tin đặt món từ người dùng.
+•	Kiểm tra số lượng món trong kho.
+o	Nếu hết hàng → trả về lỗi.
+•	Kiểm tra số dư tài khoản người dùng.
+o	Nếu không đủ tiền → trả về lỗi.
+•	Nếu hợp lệ:
+o	Trừ số lượng món trong kho.
+o	Trừ tiền trong tài khoản.
+•	Trả về kết quả thành công.

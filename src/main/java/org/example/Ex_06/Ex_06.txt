@@ -1,0 +1,8 @@
+Phân tích & thiết kế
+Input:
+•	username (String) ,balance (double)
+Output:
+•	Nếu balance < 5000 → cảnh báo (popup hoặc âm thanh tùy khu vực)
+•	Nếu dữ liệu lỗi → log thông báo thân thiện
+-Chọn kỹ thuật DI: Chọn Constructor Injection vì giúp đảm bảo dependency luôn có sẵn khi khởi tạo, 
+dễ kiểm soát và dễ test hơn.

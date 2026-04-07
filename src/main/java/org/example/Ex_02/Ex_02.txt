@@ -1,0 +1,4 @@
+    Trong Spring, Bean mặc định là Singleton, nghĩa là chỉ có 1 instance duy nhất được tạo ra và dùng
+chung cho toàn bộ hệ thống. Vì PlaySession đang là Singleton nên tất cả các máy trạm đều dùng chung một
+object này. Khi máy 01 cộng thời gian chơi thì giá trị playTime bị thay đổi, và máy 02 cũng đang dùng
+chính object đó nên bị ảnh hưởng theo. Vì vậy mới xảy ra việc các máy bị tính tiền chung thay vì tách riêng từng phiên.

@@ -1,0 +1,5 @@
+    
+Đoạn sai là this.gateway = new InternalPaymentGateway(); trong constructor. Vì ở đây class tự tạo ra 
+cổng thanh toán nên bị phụ thuộc cứng vào một loại duy nhất. Điều này làm chương trình kém linh hoạt, muốn 
+thêm Momo hay ZaloPay thì phải sửa code. Nếu dùng IoC thì dependency sẽ được truyền từ bên ngoài vào, dễ thay 
+đổi và mở rộng hơn.
